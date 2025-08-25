@@ -1,0 +1,130 @@
+input[type="date"]{
+  max-width: 12ch;
+}
+
+input[type="text"]{
+  max-width: 4ch;
+}
+
+input[type="number"]{
+  max-width: 5ch;
+}
+
+input[type="text"]#produtoFilter{
+  max-width: 9ch;
+}
+
+input[type="text"]#clienteFilter{
+  max-width: 8ch;
+}
+
+#statusFilter{
+  max-width: 12ch;
+}
+
+/* Modal */
+.modal {
+  display: none; /* começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.modal-field {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.modal-field select {
+  margin-top: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Botões do modal */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-save {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-save:hover {
+  background: #218838;
+}
+
+.btn-delete {
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-back {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.modal-back:hover {
+  color: #555;
+}
+
+.modal-title {
+  flex: 1;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+}
