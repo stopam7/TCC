@@ -1,0 +1,5 @@
+#phoneFilter,
+#nameFilter,
+#emailFilter {
+  max-width: 12ch;
+}

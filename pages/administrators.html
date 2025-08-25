@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administradores</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/administrators.css" />
+    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="../styles/filter.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <script defer src="../scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="page-title">
+        <a href="dashboard.html"
+          ><img
+            src="../assets/icons/left-arrow.webp"
+            class="back-btn"
+            alt="Voltar"
+        /></a>
+        Administradores
+      </h1>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="nameFilter"
+          placeholder="Nome"
+          title="Nome"
+        />
+        <input
+          type="email"
+          id="emailFilter"
+          placeholder="Email"
+          title="Email"
+        />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+            <th>Data de Cadastro</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kayky</td>
+            <td>admin@gmail.com</td>
+            <td>****</td>
+            <td>17/08/2025<br />11:40</td>
+            <td>
+              <button class="btn-details">
+                <img src="../assets/icons/3points.webp" alt="Detalhes" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-back" id="closeModal">
+            <img
+              class="back-btn"
+              src="../assets/icons/left-arrow.webp"
+              alt="Voltar"
+            />
+          </button>
+          <h1 class="modal-title">Editar Administrador</h1>
+        </div>
+
+        <div class="modal-field">
+          <strong>Nome do Administrador</strong><br />
+          <input type="text" value="Kayky"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Email do Administrador</strong><br />
+          <input type="text" value="admin@gmail.com"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Senha do Administrador</strong><br />
+          <input type="text"><br />
+        </div>
+
+        <div class="modal-field"><strong>ID do Administrador</strong><br />1</div>
+
+        <div class="modal-actions">
+          <button class="btn-save">Salvar Alterações</button>
+          <button class="btn-delete">Excluir Administrador</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

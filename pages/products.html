@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="../styles/filter.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <script defer src="../scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="page-title">
+        <a href="dashboard.html"
+          ><img
+            src="../assets/icons/left-arrow.webp"
+            class="back-btn"
+            alt="Voltar"
+        /></a>
+        Produtos
+      </h1>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="nameFilter"
+          placeholder="Nome do Produto"
+          title="Nome do Produto"
+        />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Data de Cadastro</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Curso muito bom para comprar e ganhar dinheiro</td>
+            <td>R$ 27,90</td>
+            <td>17/08/2025<br />11:40</td>
+            <td>
+              <button class="btn-details">
+                <img src="../assets/icons/3points.webp" alt="Detalhes" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-back" id="closeModal">
+            <img
+              class="back-btn"
+              src="../assets/icons/left-arrow.webp"
+              alt="Voltar"
+            />
+          </button>
+          <h1 class="modal-title">Editar Produto</h1>
+        </div>
+
+        <div class="modal-field">
+          <strong>Nome do Produto</strong><br />
+          <input type="text" value="Curso muito bom para comprar e ganhar dinheiro"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Preço do Produto (R$)</strong><br />
+          <input type="number" value="27.90" step="0.01"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Data de Cadastro do Produto</strong><br />
+          17/08/2025<br /> 11:40
+        </div>
+
+        <div class="modal-field"><strong>ID do Produto</strong><br />1</div>
+
+        <div class="modal-actions">
+          <button class="btn-save">Salvar Alterações</button>
+          <button class="btn-delete">Excluir Produto</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

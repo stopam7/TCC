@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos/Vendas</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/orders.css" />
+    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="../styles/filter.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <script defer src="../scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="page-title">
+        <a href="dashboard.html"
+          ><img
+            src="../assets/icons/left-arrow.webp"
+            class="back-btn"
+            alt="Voltar"
+        /></a>
+        Pedidos/Vendas
+      </h1>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="dateFilter"
+          placeholder="Data"
+          onfocus="this.type='date'"
+          onblur="if (!this.value) this.type='text'"
+          title="Data"
+        />
+        <input
+          type="text"
+          id="produtoFilter"
+          placeholder="ID Produto"
+          onfocus="this.type='number'"
+          onblur="if (!this.value) this.type='text'"
+          title="ID Produto"
+        />
+        <input
+          type="text"
+          id="clienteFilter"
+          placeholder="ID Cliente"
+          onfocus="this.type='number'"
+          onblur="if (!this.value) this.type='text'"
+          title="ID Cliente"
+        />
+        <select id="statusFilter" title="Status">
+          <option>Todos</option>
+          <option>Pendente</option>
+          <option>Pago</option>
+          <option>Cancelado</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Produto</th>
+            <th>Cliente</th>
+            <th>Valor</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>17/08/2025<br />11:40</td>
+            <td>Curso muito bom para começar</td>
+            <td>Maria Fátima<br />maria@gmail.com</td>
+            <td>R$ 27,90<br /><span class="status pending">Pendente</span></td>
+            <td>
+              <button class="btn-details">
+                <img src="../assets/icons/3points.webp" alt="Detalhes" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-back" id="closeModal">
+            <img
+              class="back-btn"
+              src="../assets/icons/left-arrow.webp"
+              alt="Voltar"
+            />
+          </button>
+          <h1 class="modal-title">Editar Pedido</h1>
+        </div>
+
+        <div class="modal-field">
+          <strong>Data</strong><br />
+          17/08/2025 11:40
+        </div>
+
+        <div class="modal-field">
+          <strong>Nome do Produto</strong><br />
+          Curso muito bom para comprar e ganhar dinheiro
+        </div>
+
+        <div class="modal-field">
+          <strong>Cliente</strong><br />
+          Maria Fátima Silvana<br />
+          maria@gmail.com<br />
+          (49) 97791-4031
+        </div>
+
+        <div class="modal-field">
+          <strong>Valor Total</strong><br />
+          R$ 27,90<br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Status</strong><br />
+          <select>
+            <option>Pendente</option>
+            <option>Pago</option>
+            <option>Cancelado</option>
+          </select>
+        </div>
+
+        <div class="modal-field"><strong>ID do Pedido</strong><br />1</div>
+
+        <div class="modal-field"><strong>ID do Produto</strong><br />1</div>
+
+        <div class="modal-field"><strong>ID do Cliente</strong><br />1</div>
+
+        <div class="modal-actions">
+          <button class="btn-save">Salvar Alterações</button>
+          <button class="btn-cancel">Cancelar Pedido</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

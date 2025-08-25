@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/customers.css" />
+    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="../styles/filter.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <script defer src="../scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="page-title">
+        <a href="dashboard.html"
+          ><img
+            src="../assets/icons/left-arrow.webp"
+            class="back-btn"
+            alt="Voltar"
+        /></a>
+        Clientes
+      </h1>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="nameFilter"
+          placeholder="Nome"
+          title="Nome"
+        />
+        <input
+          type="tel"
+          id="phoneFilter"
+          placeholder="Telefone"
+          title="Telefone"
+        />
+        <input
+          type="email"
+          id="emailFilter"
+          placeholder="Email"
+          title="Email"
+        />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Data de Cadastro</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maria Fátima Silvana</td>
+            <td>14997791403</td>
+            <td>maria@gmail.com</td>
+            <td>17/08/2025<br />11:40</td>
+            <td>
+              <button class="btn-details">
+                <img src="../assets/icons/3points.webp" alt="Detalhes" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-back" id="closeModal">
+            <img
+              class="back-btn"
+              src="../assets/icons/left-arrow.webp"
+              alt="Voltar"
+            />
+          </button>
+          <h1 class="modal-title">Editar Cliente</h1>
+        </div>
+
+        <div class="modal-field">
+          <strong>Nome do Cliente</strong><br />
+          <input type="text" value="Maria Fátima Silvana"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Email do Cliente</strong><br />
+          <input type="text" value="maria@gmail.com"><br />
+        </div>
+
+        <div class="modal-field">
+          <strong>Telefone do Cliente</strong><br />
+          <input type="text" value="(49) 97791-4031">
+        </div>
+
+        <div class="modal-field">
+          <strong>Data de Cadastro</strong><br />
+          17/08/2025<br /> 11:40
+        </div>
+
+        <div class="modal-field"><strong>ID do Cliente</strong><br />1</div>
+
+        <div class="modal-actions">
+          <button class="btn-save">Salvar Alterações</button>
+          <button class="btn-cancel">Cancelar Cliente</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
