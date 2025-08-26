@@ -1,5 +1,6 @@
 #dateFilter,
 #produtoFilter,
-#clienteFilter{
+#clienteFilter {
   max-width: 12ch;
+  min-width: 0;
 }

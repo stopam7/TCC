@@ -1,4 +1,5 @@
 #nameFilter,
 #emailFilter {
   max-width: 14ch;
+  min-width: 0;
 }

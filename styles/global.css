@@ -18,6 +18,11 @@ a {
   color: inherit;
 }
 
+.link {
+  text-decoration: underline;
+  color: blue;
+}
+
 .main-container {
   background: #ffffff;
   width: 100%;

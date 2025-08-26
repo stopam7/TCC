@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="page-title">Checkout</h1>
+
+    <div class="step-indicator">Etapa 1 de 2</div>
+
+    <!-- Product card -->
+    <div class="product-card">
+      <img src="../assets/icons/product.webp" alt="Produto" class="product-icon">
+      <div class="product-info">
+        <div class="product-name">Nome do Produto</div>
+        <div class="product-price">R$100</div>
+      </div>
+    </div>
+
+    <form id="checkoutForm" action="checkout_step2.html" method="post" class="checkout-form" autocomplete="off">
+      <p class="form-intro">Preencha as informações:</p>
+
+      <label class="field-label" for="fullname">Nome Completo*</label>
+      <input id="fullname" name="fullname" type="text" placeholder="Nome Completo" required>
+
+      <label class="field-label" for="phone">Número de Telefone*</label>
+      <input id="phone" name="phone" type="tel" placeholder="11999999999" required>
+
+      <label class="field-label" for="email">Email*</label>
+      <input id="email" name="email" type="email" placeholder="email@dominio.com" required>
+
+      <div class="payment-section">
+        <div class="payment-title">Método de pagamento</div>
+
+        <div class="payment-info">
+          <div class="payment-icon-wrap">
+            <img src="../assets/icons/pix.webp" alt="Pix" class="payment-icon">
+          </div>
+          <div class="payment-label">Pix</div>
+        </div>
+
+      </div>
+
+      <button class="btn" type="submit">Próxima Etapa</button>
+    </form>
+
+  </div>
+</body>
+</html>

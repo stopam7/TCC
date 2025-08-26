@@ -1,3 +1,4 @@
 #nameFilter {
   max-width: 20ch;
+  min-width: 0;
 }
