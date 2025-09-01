@@ -1,3 +1,7 @@
+.main-container{
+    padding: 30px 45px;
+  }
+
 .page-title {
     margin: 0 0 5px;
 }
@@ -128,15 +132,10 @@
 }
 
 /* Button (keeps same .btn as global) */
-/* spacing */
-.checkout-form .btn {
+#checkout-btn {
     display: block;
-    margin: 26px auto 8px;
+    margin: 26px auto 0px;
     width: 260px;
-    /* prominent CTA width */
-    border-radius: 28px;
-    font-size: 16px;
-    padding: 14px 20px;
 }
 
 @media (min-width: 500px) {
